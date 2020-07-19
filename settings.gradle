@@ -1,0 +1,3 @@
+rootProject.name='TwoWaySlider'
+include ':app'
+include ':TwoWaySliderLib'

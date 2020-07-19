@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.yun.twowayslider.TwoWaySlider
+        android:id="@+id/twoway"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:text_left_num="1"
+        app:text_right_num="100"
+        app:text_min_unit="1"
+        app:pb_height="10dp"
+        app:pb_within_color="@android:color/holo_blue_bright"
+        app:pb_without_color="@android:color/holo_red_light"
+        app:ball_left_drawable="@mipmap/circle"
+        app:ball_right_drawable="@mipmap/circle"
+
+        />
+
+
+    <!--        app:ball_left_solid_color="@android:color/white"-->
+    <!--        app:ball_left_stroke_color="@android:color/black"-->
+    <!--        app:ball_right_solid_color="@android:color/holo_green_light"-->
+    <!--        app:ball_right_stroke_color="@android:color/holo_green_dark"-->
+    <!--        app:ball_radius_size="8dp"-->
+    <!--        app:ball_stroke_size="1dp"-->
+
+<!--    ball_left_solid_color 代表左侧圆球的填充色-->
+<!--    ball_left_stroke_color 代表左侧圆球的边框颜色-->
+<!--    ball_right_solid_color 代表右侧圆球的填充色-->
+<!--    ball_right_stroke_color 代表右侧圆球的边框颜色-->
+<!--    ball_radius_size 圆球半径-->
+<!--    ball_stroke_size 圆球边框显示宽度-->
+<!--    text_left_num 进度条最小值 单位int-->
+<!--    text_right_num 进度条最大值 单位int-->
+<!--    text_min_unit 进度条可拖动的最小单位 单位int-->
+<!--    pb_height 进度条高度-->
+<!--    pb_within_color 双向选中部分的进度条颜色-->
+<!--    pb_without_color 双向未选中部分的进度条颜色-->
+<!--    ball_left_drawable 左侧圆球可以引用图片资源-->
+<!--    ball_right_drawable 右侧圆球可以引用图片资源-->
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text="1-100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--        app:ball_left_drawable="@mipmap/ic_launcher"-->
+    <!--        app:ball_right_drawable="@mipmap/ic_launcher"-->
+
+<!--    <com.lyun.twowayslider.DoubleSlideSeekBar-->
+<!--        android:id="@+id/doubleslide_withoutrule"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:lineHeight="20dp"-->
+<!--        app:textSize="16sp"-->
+<!--        app:textColor="#e40627"-->
+<!--        app:inColor="#0a40f1"-->
+<!--        app:outColor="#ace208"-->
+<!--        app:imageLow="@mipmap/ic_launcher"-->
+<!--        app:imageBig="@mipmap/ic_launcher"-->
+<!--        app:imagewidth="20dp"-->
+<!--        app:imageheight="20dp"-->
+<!--        app:hasRule="false"-->
+<!--        app:bigValue="1000"-->
+<!--        app:smallValue="0"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
